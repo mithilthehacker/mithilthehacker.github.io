@@ -2,38 +2,10 @@
 <html>
 <head>
  <title>Mithilthehacker's Blog!</title>
-  <style>
+
   /* You shouldn't be able to read this*/
   /*But if you can*/
   /*Hello!*/
-  .ticker-container {
-    width: 100%;
-    overflow: hidden; 
-    display: flex;
-  }
-
-  .ticker-content {
-    display: flex;
-    white-space: nowrap;
-    font-weight: bold;
-    font-family: Arial, sans-serif;
-    animation: slide-left 25s linear infinite;
-  }
-
-  .ticker-content span {
-    padding: 0 10px;
-  }
-   
-  .ticker-container:hover .ticker-content {
-    animation-play-state: paused;
-    cursor: pointer;
-  }
-
-  @keyframes slide-left {
-    0% { transform: translateX(0); }
-    100% { transform: translateX(-50%); }
-  }
- </style>
 
 </head>
 
@@ -61,36 +33,27 @@
   <table width="100%" bgcolor="#163941" cellpadding="8">
    <tr>
     <td>
-<div class="ticker-container">
-  <div class="ticker-content">
-    <span>NEW PROJECTS!</span>
-    <span>|</span>
-    <span>CHECK OUT MY GITHUB!</span>
-    <span>|</span>
-    <span>CURRENTLY BUILDING STUFF!</span>
-    <span>|</span>
-    <span>DOES ANYONE READ THIS?</span>
-    <span>|</span>
-    <span>ARTICLES EVERY 2 WEEKS!</span>
-    <span>|</span>
-    <span>TECHNOBLADE NEVER DIES!</span>
-    <span>|</span>
-    <span>I gently open the d-door?</span>
-    <span>NEW PROJECTS!</span>
-    <span>|</span>
-    <span>CHECK OUT MY GITHUB!</span>
-    <span>|</span>
-    <span>CURRENTLY BUILDING STUFF!</span>
-    <span>|</span>
-    <span>DOES ANYONE READ THIS?</span>
-    <span>|</span>
-    <span>ARTICLES EVERY 2 WEEKS!</span>
-    <span>|</span>
-    <span>TECHNOBLADE NEVER DIES!</span>
-    <span>|</span>
+     <div style="width:100%; overflow:hidden; display:flex;">
+  <div style="display:flex; white-space:nowrap; font-weight:bold; font-family:Arial, sans-serif; animation:slide-left 20s linear infinite; padding-right:100%;" onmouseover="this.style.animationPlayState='paused'" onmouseout="this.style.animationPlayState='running'">
+    <span>NEW PROJECTS!</span>&nbsp;|&nbsp;
+    <span>CHECK OUT MY GITHUB!</span>&nbsp;|&nbsp;
+    <span>CURRENTLY BUILDING STUFF!</span>&nbsp;|&nbsp;
+    <span>DOES ANYONE READ THIS?</span>&nbsp;|&nbsp;
+    <span>ARTICLES EVERY 2 WEEKS!</span>&nbsp;|&nbsp;
+    <span>TECHNOBLADE NEVER DIES!</span>&nbsp;|&nbsp;
+    <span>I gently open the d-door?</span>&nbsp;|&nbsp;
     <span>OS.REMOVE('CHARACTERS/SAYORI.CHR') SUCCESSFUL!</span>
   </div>
+
+  <style>
+    @keyframes slide-left {
+      0% { transform: translateX(100%); }
+      100% { transform: translateX(-100%); }
+    }
+  </style>
 </div>
+
+
 
     </td>
    </tr>
