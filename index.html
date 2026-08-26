@@ -2,6 +2,39 @@
 <html>
 <head>
  <title>Mithilthehacker's Blog!</title>
+  <style>
+  /* You shouldn't be able to read this*/
+  /*But if you can*/
+  /*Hello!*/
+  .ticker-container {
+    width: 100%;
+    overflow: hidden; 
+    display: flex;
+  }
+
+  .ticker-content {
+    display: flex;
+    white-space: nowrap;
+    font-weight: bold;
+    font-family: Arial, sans-serif;
+    animation: slide-left 25s linear infinite;
+  }
+
+  .ticker-content span {
+    padding: 0 10px;
+  }
+   
+  .ticker-container:hover .ticker-content {
+    animation-play-state: paused;
+    cursor: pointer;
+  }
+
+  @keyframes slide-left {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+ </style>
+
 </head>
 
 <body background="banger.jpg" bgcolor="#102A32" text="#F5F1E8"
